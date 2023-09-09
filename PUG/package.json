@@ -1,0 +1,17 @@
+{
+  "name": "pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/sass/style.scss public/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "sass": "^1.66.1"
+  }
+}

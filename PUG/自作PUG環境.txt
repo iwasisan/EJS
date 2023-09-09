@@ -1,0 +1,22 @@
+構造　行っているのはEJSとほぼ同じ
+
+ejsファイル→htmlファイルの変換が
+
+pugファイル→htmlファイルに変わった感じ。
+
+
+構造
+
+pugファイルの変換についてはgulpを使用
+「npx gulp pug」で使える。
+
+srcフォルダの中のpugファイルをpubulicフォルダにコンパイルするよう
+gulpfile.jsで記載している。
+_footer.pug等_が付いたファイルは選ばないように設定
+
+sassはEJSと同じくstyle.scssにひとまとめにし、
+「npm run sass」で変換できる。
+
+
+上記2つのコマンドを使えば、
+[html＋css]のファイルが作成できる。
