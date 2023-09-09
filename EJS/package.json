@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run ejs && npm run sass",
-    "ejs": "ejs-cli --base-dir src/ejs/ index.ejs --out dest/",
+    "ejs": "ejs-cli -b src/ejs/ *.ejs -e components/ -o dest/ -O data.json",
     "sass": "sass src/style.scss dest/css/style.css"
   },
   "keywords": [],

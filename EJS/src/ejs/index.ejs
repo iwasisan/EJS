@@ -7,18 +7,18 @@
   <title>EJS</title>
 </head>
 <body>
-  <%- include('_header') %>
+  <%- include('./components/_header.ejs',{header:data.header}) %>
 
   <main>
     <h2>タイトル</h2>
     <p>テfddト</p>
     <img src="/src/img/data-uri-img.jpg">
 
-  <%- include('_main') %>
+  <%- include('./components/_main.ejs') %>
 
   </main>
   
-  <%- include('_footer') %>
+  <%- include('./components/_footer.ejs') %>
   <script src="/src/js/_scroll.js"></script>
 </body>
 </html>
