@@ -1,3 +1,62 @@
 <footer>
-  <p>footerやで</p>
+  <div>
+    <nav>
+      <p><img src="/src/img/ロゴ.png" alt=""></p>
+      <p>
+        MITSUI&CO.<br>
+        RECRUIT
+      </p>
+    </nav>
+    <nav>
+      <nav>
+        <div>
+          <p>Category</p>
+          <p><a href="#"><%= cate.all %></a></p>
+          <p><a href="#"><%= cate.company %></a></p>
+          <p><a href="#"><%= cate.employee %></a></p>
+          <p><a href="#"><%= cate.work %></a></p>
+          <p><a href="#"><%= cate.environment %></a></p>
+        </div>
+        <div>
+          <p>Pickup</p>
+          <p><a href="#"><%= pic.about %></a></p>
+          <p><a href="#"><%= pic.DNA %></a></p>
+          <p><a href="#"><%= pic.raise %></a></p>
+          <p><a href="#">三井物産の人材像とキャリア開発</a></p>
+        </div>
+        <div>
+          <p><a href="#">News</a></p>
+          <p><a href="#">コーポレートサイト</a></p>
+          <p><a href="#">個人情報保護方針</a></p>
+        </div>
+      </nav>
+      <nav>
+        <p><%= rec.recruit %></p>
+        <p><a href="#"><%= rec.career %></a></p>
+        <p><a href="#"><%= rec.new %></a></p>
+        <p><a href="#"><%= rec.intern %></a></p>
+      </nav>
+    </nav>
+  </div>
+  <aside>
+    <div>
+      <p>Popular Tag</p>
+      <ul>
+        <li><%= Tag.career %></li>
+        <li><%= Tag.new %></li>
+        <li><%= Tag.carerec %></li>
+        <li><%= Tag.culture %></li>
+        <li><%= Tag.interview %></li>
+        <li><%= Tag.system %></li>
+      </ul>
+    </div>
+    <div>
+      <p>募集要項</p>
+      <nav>
+        <p><a href="#">キャリア採用募集要項</a></p>
+        <p><a href="#">新卒採用募集要項</a></p>
+      </nav>
+    </div>
+  </aside>
+  <p>COPYRIGHT (C)2022 MITSUI & CO.LTD.ALL RIGHTS RESERVED</p>
 </footer>

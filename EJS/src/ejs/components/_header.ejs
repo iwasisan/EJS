@@ -1,5 +1,47 @@
 <header>
-  <p>headerやで</p>
-  <h1>テスト</h1>
-  <h1><%- header.title %></h1>
+  <nav class="headernavi-1">
+    <h1><img src="/src/img/ロゴ.png" alt=""></h1>
+    <div>
+      <h3>
+        MITSUI&CO.<br>
+        RECRUIT
+      </h3>
+      <p>三井物産採用ポータルサイト</p>
+    </div>
+  </nav>
+
+  <% const header1 = "キャリアマイページ" %>
+
+  <nav class="headernavi-2">
+    <div>
+      <p><%= rec.recruit %></p>
+      <ul>
+        <li><a href="#"><%= rec.career %></a></li>
+        <li><a href="#"><%= rec.new %></a></li>
+        <li><a href="#"><%= rec.intern %></a></li>
+      </ul>
+    </div>
+    <div>
+      <p><a href="#">キャリアマイページ</a></p>
+      <p><a href="#">新卒マイページ</a></p>
+    </div>
+  </nav>
+
+  <div id="nav-wrapper" class="nav-wrapper">
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <nav class="sp-nav">
+    <ul>
+      <li>会社案内</li>
+      <li>メニュー1</li>
+      <li>メニュー1</li>
+      <li>メニュー1</li>
+      <li>メニュー1</li>
+    </ul>
+  </nav>
+  <div class="black-bg" id="js-black-bg"></div>
+</div>
 </header>

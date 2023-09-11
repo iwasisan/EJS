@@ -1,0 +1,26 @@
+// 初期設定
+
+a{
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+}
+
+li{
+  list-style: none;
+}
+
+html{
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+// 文字、カテゴリーの色
+
+$font-color:rgb(20, 20, 20);
+$font-color-hover:rgb(255, 255, 255);
+
+$category-comp:rgb(91,179,188);
+$category-empl:rgb(208,95,82);
+$category-work:rgb(38,116,171);
+$category-envi:rgb(248,221,109);
+

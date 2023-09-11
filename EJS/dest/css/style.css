@@ -1,13 +1,15 @@
-h2 {
-  color: aquamarine;
+a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
 }
 
-p {
-  font-size: 20px;
+li {
+  list-style: none;
 }
 
-p {
-  color: rgb(25, 46, 231);
+html {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
