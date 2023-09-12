@@ -12,33 +12,33 @@
 
 <body>
   <header>
-  <nav class="headernavi-1">
-    <h1><img src="/src/img/ロゴ.png" alt=""></h1>
-    <div>
-      <h3>
-        MITSUI&CO.<br>
-        RECRUIT
-      </h3>
-      <p>三井物産採用ポータルサイト</p>
-    </div>
-  </nav>
+  <div class="headernavi-top">
+    <nav class="headernavi-1">
+      <h1><img src="/src/img/ロゴ.png" alt=""></h1>
+      <div>
+        <h3>
+          MITSUI&CO.<br>
+          RECRUIT
+        </h3>
+        <p>三井物産採用ポータルサイト</p>
+      </div>
+    </nav>
 
-  
-
-  <nav class="headernavi-2">
-    <div>
-      <p>採用情報</p>
-      <ul>
-        <li><a href="#">キャリア採用</a></li>
-        <li><a href="#">新卒採用</a></li>
-        <li><a href="#">インターンシップ</a></li>
-      </ul>
-    </div>
-    <div>
-      <p><a href="#">キャリアマイページ</a></p>
-      <p><a href="#">新卒マイページ</a></p>
-    </div>
-  </nav>
+    <nav class="headernavi-2">
+      <div class="header-link">
+        <p>採用情報</p>
+        <ul>
+          <li><a href="#">キャリア採用</a></li>
+          <li><a href="#">新卒採用</a></li>
+          <li><a href="#">インターンシップ</a></li>
+        </ul>
+      </div>
+      <div class="header-button">
+        <p><a href="#">キャリアマイページ</a></p>
+        <p><a href="#">新卒マイページ</a></p>
+      </div>
+    </nav>
+  </div>
 
   <div id="nav-wrapper" class="nav-wrapper">
   <div class="hamburger" id="js-hamburger">
@@ -47,12 +47,12 @@
     <span class="hamburger__line hamburger__line--3"></span>
   </div>
   <nav class="sp-nav">
-    <ul>
-      <li>会社案内</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
+    <ul class="hum-ul">
+      <li class="hum-li">会社案内</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
     </ul>
   </nav>
   <div class="black-bg" id="js-black-bg"></div>
@@ -61,7 +61,7 @@
 
   <main>
 
-  <div>
+  <div class="main-title">
   <h2><img src="/src/img/写真.jpg" alt=""></h2>
   <hgroup>
     <h1>
@@ -82,8 +82,8 @@
 
 
 
-<section>
-  <nav>
+<section class="news-rec">
+  <nav class="news">
     <h2>News</h2>
     <ul>
       <li>2023.04.03<a href="#">キャリア採用：2023年度キャリア採用選考情報を公開しました</a></li>
@@ -93,7 +93,7 @@
       <li>2023.01.30<a href="#">新卒採用：第二クールにおける2つのインターン情報を公開しました</a></li>
     </ul>
   </nav>
-  <nav>
+  <nav class="rec">
     <h2>採用情報</h2>
     <div>
       <p><a href="#">キャリア採用向け</a></p>
@@ -103,19 +103,19 @@
   </nav>
 </section>
 
-<section>
-  <aside>
-    <nav>
+<section class="cafe-tag-cont">
+  <aside class="cate-tag">
+    <nav class="cate">
       <h3>Category</h3>
       <div>
-        <p><a href="#">全て</a></p>
-        <p><a href="#">会社を知る</a></p>
-        <p><a href="#">社員を知る</a></p>
-        <p><a href="#">仕事を知る</a></p>
-        <p><a href="#">働く環境</a></p>
+        <p><span class="circle cir0"></span><a href="#">全て</a></p>
+        <p><span class="circle cir1"></span><a href="#">会社を知る</a></p>
+        <p><span class="circle cir2"></span><a href="#">社員を知る</a></p>
+        <p><span class="circle cir3"></span><a href="#">仕事を知る</a></p>
+        <p><span class="circle cir4"></span><a href="#">働く環境</a></p>
       </div>
     </nav>
-    <nav>
+    <nav class="tag">
       <h3>Tag</h3>
       <div>
         <p><a href="#">#career</a></p>
@@ -123,31 +123,31 @@
         <p><a href="#">#キャリア採用</a></p>
         <p><a href="#">#カルチャー</a></p>
         <p><a href="#">#インタビュー</a></p>
-        <p><a href="#">制度</a></p>
+        <p><a href="#">#制度</a></p>
       </div>
     </nav>
   </aside>
-  <article>
-    <nav>
+  <article class="contents">
+    <nav class="cont-search">
       <h3>Contents</h3>
-      <div>
+      <div class="cont-search-togul">
         <form>
           <input type="search" name="search" placeholder="search">
-          <input type="submit" name="submit" value="検索">
+          <input class="btn" type="submit" name="submit" value="検索">
         </form>
-        <div>
-          <p>GRID</p>
+        <div class="togul">
+          <p class="togul1">GRID</p>
           <p>LIST</p>
         </div>
       </div>
     </nav>
-    <section>
-      <div>
+    <section class="cont-block">
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真１.png" alt=""></p>
-            <p><span></span>会社を知る</p>
-            <p>三井物産について</p>
+            <p><span class="circle cir1"></span>会社を知る</p>
+            <p class="block-title">三井物産について</p>
           </a>
         </nav>
         <aside>
@@ -156,12 +156,12 @@
             <p><a href="#">#カルチャー</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真２.png" alt=""></p>
-            <p><span></span>仕事を知る</p>
-            <p>三井物産でのキャリア形成・活躍イメージ</p>
+            <p><span class="circle cir3"></span>仕事を知る</p>
+            <p class="block-title">三井物産でのキャリア形成・活躍イメージ</p>
           </a>
         </nav>
         <aside>
@@ -169,15 +169,15 @@
             <p><a href="#">#新卒採用</a></p>
             <p><a href="#">#キャリア採用</a></p>
             <p><a href="#">#カルチャー</a></p>
-            <p><a href="#">制度</a></p>
+            <p><a href="#">#制度</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真３.png" alt=""></p>
-            <p><span></span>仕事を知る</p>
-            <p>三井物産の人物像とキャリア開発</p>
+            <p><span class="circle cir3"></span>仕事を知る</p>
+            <p class="block-title">三井物産の人物像とキャリア開発</p>
           </a>
         </nav>
         <aside>
@@ -185,30 +185,30 @@
             <p><a href="#">#新卒採用</a></p>
             <p><a href="#">#キャリア採用</a></p>
             <p><a href="#">#カルチャー</a></p>
-            <p><a href="#">制度</a></p>
+            <p><a href="#">#制度</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真４.png" alt=""></p>
-            <p><span></span>働く環境</p>
-            <p>人材育成制度</p>
+            <p><span class="circle cir4"></span>働く環境</p>
+            <p class="block-title">人材育成制度</p>
           </a>
         </nav>
         <aside>
             <p><a href="#">#career</a></p>
             <p><a href="#">#新卒採用</a></p>
             <p><a href="#">#キャリア採用</a></p>
-            <p><a href="#">制度</a></p>
+            <p><a href="#">#制度</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真5.png" alt=""></p>
-            <p><span></span>会社を知る</p>
-            <p>三井物産のDNA</p>
+            <p><span class="circle cir1"></span>会社を知る</p>
+            <p class="block-title">三井物産のDNA</p>
           </a>
         </nav>
         <aside>
@@ -217,12 +217,12 @@
             <p><a href="#">#カルチャー</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真6.png" alt=""></p>
-            <p><span></span>会社を知る</p>
-            <p>理念の礎となった経営者たち</p>
+            <p><span class="circle cir1"></span>会社を知る</p>
+            <p class="block-title">理念の礎となった経営者たち</p>
           </a>
         </nav>
         <aside>
@@ -231,12 +231,12 @@
             <p><a href="#">#カルチャー</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真7.png" alt=""></p>
-            <p><span></span>働く環境</p>
-            <p>女子寮座談会</p>
+            <p><span class="circle cir4"></span>働く環境</p>
+            <p class="block-title">女子寮座談会</p>
           </a>
         </nav>
         <aside>
@@ -244,12 +244,12 @@
             <p><a href="#">#カルチャー</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真８.png" alt=""></p>
-            <p><span></span>働く環境</p>
-            <p>男子寮座談会</p>
+            <p><span class="circle cir4"></span>働く環境</p>
+            <p class="block-title">男子寮座談会</p>
           </a>
         </nav>
         <aside>
@@ -257,12 +257,12 @@
             <p><a href="#">#カルチャー</a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真９.png" alt=""></p>
-            <p><span></span>働く環境</p>
-            <p>挑戦と創造に向けたオフィス</p>
+            <p><span class="circle cir4"></span>働く環境</p>
+            <p class="block-title">挑戦と創造に向けたオフィス</p>
           </a>
         </nav>
         <aside>
@@ -271,23 +271,24 @@
       </div>
     </section>
   </article>
-  <p><a href="#">もっと見る</a></p>
 </section>
+<p class="contnext"><a href="#">もっと見る</a></p>
+<hr>
 
   </main>
   
   <footer>
-  <div>
-    <nav>
+  <div class="footer-map">
+    <nav class="fo-logo">
       <p><img src="/src/img/ロゴ.png" alt=""></p>
-      <p>
+      <h3>
         MITSUI&CO.<br>
         RECRUIT
-      </p>
+      </h3>
     </nav>
-    <nav>
-      <nav>
-        <div>
+    <nav class="footer-map2">
+      <nav class="footer-map3">
+        <div class="fo-cate">
           <p>Category</p>
           <p><a href="#">全て</a></p>
           <p><a href="#">会社を知る</a></p>
@@ -295,20 +296,20 @@
           <p><a href="#">仕事を知る</a></p>
           <p><a href="#">働く環境</a></p>
         </div>
-        <div>
+        <div class="fo-pic">
           <p>Pickup</p>
           <p><a href="#">三井物産について</a></p>
           <p><a href="#">三井物産のDNA</a></p>
           <p><a href="#">人材育成制度</a></p>
           <p><a href="#">三井物産の人材像とキャリア開発</a></p>
         </div>
-        <div>
+        <div class="fo-news">
           <p><a href="#">News</a></p>
           <p><a href="#">コーポレートサイト</a></p>
           <p><a href="#">個人情報保護方針</a></p>
         </div>
       </nav>
-      <nav>
+      <nav class="fo-rec">
         <p>採用情報</p>
         <p><a href="#">キャリア採用</a></p>
         <p><a href="#">新卒採用</a></p>
@@ -316,8 +317,8 @@
       </nav>
     </nav>
   </div>
-  <aside>
-    <div>
+  <aside class="fo-tag-btn">
+    <div class="fo-tag">
       <p>Popular Tag</p>
       <ul>
         <li>#career</li>
@@ -325,18 +326,18 @@
         <li>#キャリア採用</li>
         <li>#カルチャー</li>
         <li>#インタビュー</li>
-        <li>制度</li>
+        <li>#制度</li>
       </ul>
     </div>
-    <div>
-      <p>募集要項</p>
+    <div class="fo-btn">
+      <h4>募集要項</h4>
       <nav>
         <p><a href="#">キャリア採用募集要項</a></p>
         <p><a href="#">新卒採用募集要項</a></p>
       </nav>
     </div>
   </aside>
-  <p>COPYRIGHT (C)2022 MITSUI & CO.LTD.ALL RIGHTS RESERVED</p>
+  <p class="copy">COPYRIGHT (C)2022 MITSUI & CO.LTD.ALL RIGHTS RESERVED</p>
 </footer>
   <script src="/src/js/_scroll.js"></script>
 </body>

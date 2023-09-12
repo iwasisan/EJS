@@ -1,31 +1,31 @@
 <header>
-  <nav class="headernavi-1">
-    <h1><img src="/src/img/ロゴ.png" alt=""></h1>
-    <div>
-      <h3>
-        MITSUI&CO.<br>
-        RECRUIT
-      </h3>
-      <p>三井物産採用ポータルサイト</p>
-    </div>
-  </nav>
+  <div class="headernavi-top">
+    <nav class="headernavi-1">
+      <h1><img src="/src/img/ロゴ.png" alt=""></h1>
+      <div>
+        <h3>
+          MITSUI&CO.<br>
+          RECRUIT
+        </h3>
+        <p>三井物産採用ポータルサイト</p>
+      </div>
+    </nav>
 
-  <% const header1 = "キャリアマイページ" %>
-
-  <nav class="headernavi-2">
-    <div>
-      <p><%= rec.recruit %></p>
-      <ul>
-        <li><a href="#"><%= rec.career %></a></li>
-        <li><a href="#"><%= rec.new %></a></li>
-        <li><a href="#"><%= rec.intern %></a></li>
-      </ul>
-    </div>
-    <div>
-      <p><a href="#">キャリアマイページ</a></p>
-      <p><a href="#">新卒マイページ</a></p>
-    </div>
-  </nav>
+    <nav class="headernavi-2">
+      <div class="header-link">
+        <p><%= rec.recruit %></p>
+        <ul>
+          <li><a href="#"><%= rec.career %></a></li>
+          <li><a href="#"><%= rec.new %></a></li>
+          <li><a href="#"><%= rec.intern %></a></li>
+        </ul>
+      </div>
+      <div class="header-button">
+        <p><a href="#">キャリアマイページ</a></p>
+        <p><a href="#">新卒マイページ</a></p>
+      </div>
+    </nav>
+  </div>
 
   <div id="nav-wrapper" class="nav-wrapper">
   <div class="hamburger" id="js-hamburger">
@@ -34,12 +34,12 @@
     <span class="hamburger__line hamburger__line--3"></span>
   </div>
   <nav class="sp-nav">
-    <ul>
-      <li>会社案内</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
-      <li>メニュー1</li>
+    <ul class="hum-ul">
+      <li class="hum-li">会社案内</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
+      <li class="hum-li">メニュー1</li>
     </ul>
   </nav>
   <div class="black-bg" id="js-black-bg"></div>

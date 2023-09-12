@@ -1,4 +1,4 @@
-<div>
+<div class="main-title">
   <h2><img src="/src/img/写真.jpg" alt=""></h2>
   <hgroup>
     <h1>
@@ -19,8 +19,8 @@
 <% const newsdate2 = "2023.02.22" %>
 <% const newsdate3 = "2023.01.30" %>
 
-<section>
-  <nav>
+<section class="news-rec">
+  <nav class="news">
     <h2><%= heli.news %></h2>
     <ul>
       <li><%= newsdate1 %><a href="#"><%= newstext1 %></a></li>
@@ -30,7 +30,7 @@
       <li><%= newsdate3 %><a href="#"><%= newstext5 %></a></li>
     </ul>
   </nav>
-  <nav>
+  <nav class="rec">
     <h2><%= heli.recruit %></h2>
     <div>
       <p><a href="#">キャリア採用向け</a></p>
@@ -40,19 +40,19 @@
   </nav>
 </section>
 
-<section>
-  <aside>
-    <nav>
+<section class="cafe-tag-cont">
+  <aside class="cate-tag">
+    <nav class="cate">
       <h3>Category</h3>
       <div>
-        <p><a href="#"><%= cate.all %></a></p>
-        <p><a href="#"><%= cate.company %></a></p>
-        <p><a href="#"><%= cate.employee %></a></p>
-        <p><a href="#"><%= cate.work %></a></p>
-        <p><a href="#"><%= cate.environment %></a></p>
+        <p><span class="circle cir0"></span><a href="#"><%= cate.all %></a></p>
+        <p><span class="circle cir1"></span><a href="#"><%= cate.company %></a></p>
+        <p><span class="circle cir2"></span><a href="#"><%= cate.employee %></a></p>
+        <p><span class="circle cir3"></span><a href="#"><%= cate.work %></a></p>
+        <p><span class="circle cir4"></span><a href="#"><%= cate.environment %></a></p>
       </div>
     </nav>
-    <nav>
+    <nav class="tag">
       <h3>Tag</h3>
       <div>
         <p><a href="#"><%= Tag.career %></a></p>
@@ -64,27 +64,27 @@
       </div>
     </nav>
   </aside>
-  <article>
-    <nav>
+  <article class="contents">
+    <nav class="cont-search">
       <h3>Contents</h3>
-      <div>
+      <div class="cont-search-togul">
         <form>
           <input type="search" name="search" placeholder="search">
-          <input type="submit" name="submit" value="検索">
+          <input class="btn" type="submit" name="submit" value="検索">
         </form>
-        <div>
-          <p>GRID</p>
+        <div class="togul">
+          <p class="togul1">GRID</p>
           <p>LIST</p>
         </div>
       </div>
     </nav>
-    <section>
-      <div>
+    <section class="cont-block">
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真１.png" alt=""></p>
-            <p><span></span><%= cate.company %></p>
-            <p><%= pic.about %></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.about %></p>
           </a>
         </nav>
         <aside>
@@ -93,12 +93,12 @@
             <p><a href="#"><%= Tag.culture %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真２.png" alt=""></p>
-            <p><span></span><%= cate.work %></p>
-            <p><%= pic.work %></p>
+            <p><span class="circle cir3"></span><%= cate.work %></p>
+            <p class="block-title"><%= pic.work %></p>
           </a>
         </nav>
         <aside>
@@ -109,12 +109,12 @@
             <p><a href="#"><%= Tag.system %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真３.png" alt=""></p>
-            <p><span></span><%= cate.work %></p>
-            <p><%= pic.career %></p>
+            <p><span class="circle cir3"></span><%= cate.work %></p>
+            <p class="block-title"><%= pic.career %></p>
           </a>
         </nav>
         <aside>
@@ -125,12 +125,12 @@
             <p><a href="#"><%= Tag.system %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真４.png" alt=""></p>
-            <p><span></span><%= cate.environment %></p>
-            <p><%= pic.raise %></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.raise %></p>
           </a>
         </nav>
         <aside>
@@ -140,12 +140,12 @@
             <p><a href="#"><%= Tag.system %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真5.png" alt=""></p>
-            <p><span></span><%= cate.company %></p>
-            <p><%= pic.DNA %></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.DNA %></p>
           </a>
         </nav>
         <aside>
@@ -154,12 +154,12 @@
             <p><a href="#"><%= Tag.culture %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真6.png" alt=""></p>
-            <p><span></span><%= cate.company %></p>
-            <p><%= pic.philosophy %></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.philosophy %></p>
           </a>
         </nav>
         <aside>
@@ -168,12 +168,12 @@
             <p><a href="#"><%= Tag.culture %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真7.png" alt=""></p>
-            <p><span></span><%= cate.environment %></p>
-            <p><%= pic.girl %></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.girl %></p>
           </a>
         </nav>
         <aside>
@@ -181,12 +181,12 @@
             <p><a href="#"><%= Tag.culture %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真８.png" alt=""></p>
-            <p><span></span><%= cate.environment %></p>
-            <p><%= pic.boy %></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.boy %></p>
           </a>
         </nav>
         <aside>
@@ -194,12 +194,12 @@
             <p><a href="#"><%= Tag.culture %></a></p>
         </aside>
       </div>
-      <div>
+      <div class="block-a">
         <nav>
           <a href="#">
             <p><img src="/src/img/写真９.png" alt=""></p>
-            <p><span></span><%= cate.environment %></p>
-            <p><%= pic.office %></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.office %></p>
           </a>
         </nav>
         <aside>
@@ -208,5 +208,6 @@
       </div>
     </section>
   </article>
-  <p><a href="#">もっと見る</a></p>
 </section>
+<p class="contnext"><a href="#">もっと見る</a></p>
+<hr>
