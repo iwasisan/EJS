@@ -1,0 +1,120 @@
+@use "./../base_css/base" as b;
+@use "./../item_css/tuika" as t;
+
+
+@mixin font {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: b.$font-color;
+}
+
+@mixin fontbox{
+  border: solid 1px b.$font-color;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+@mixin fo-tag{
+  @include font();
+  @include fontbox();
+  width: fit-content;
+  padding: 3px 6px;
+  margin: 0;
+}
+
+
+
+
+@mixin flex{
+  display: flex;
+}
+
+@mixin news{
+  @include flex();
+  @include font();
+  align-items: flex-start;
+  h2{
+    font-size: 25px;
+    margin-top: 10px;
+    position: relative;
+  }
+}
+
+@mixin cafe{
+  @include font();
+  h3{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin tag{
+  @include fontbox();
+  width: fit-content;
+  padding: 3px 6px;
+}
+
+@mixin contblock{
+  @include font();
+  max-width: fit-content;
+  max-height:  430px;
+  p{
+    margin: 0;
+  }
+  nav{
+    img{
+      max-width: 269px;
+      margin-bottom: 6px
+    }
+    span{
+      @include t.circle;
+      margin-right: 10px;
+    }
+    .block-title{
+      font-size: 20px;
+      margin:8px 0 12px 0;
+      max-width: 266px;
+      white-space: normal;
+    }
+  }
+  aside{
+    @include flex();
+    gap: 2px;
+    flex-wrap:wrap;
+    max-width: 269px;
+    p{
+      @include tag();
+    }
+  }
+}
+
+@mixin grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.9fr 1fr;
+  gap: 30px;
+  max-width: fit-content;
+}
+
+@mixin logo{
+  img{
+    max-width: 100px;
+  }
+  h3{
+    @include font();
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+@mixin fo-link{
+  p{
+    @include font;
+    margin-bottom: 25px;
+  }
+  a{
+    text-decoration: underline;
+  }
+}

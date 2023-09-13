@@ -1,0 +1,100 @@
+@use "./../base_css/base" as b;
+@use "./../item_css/henka" as h;
+@use "./../item_css/tuika" as t;
+
+
+.fo-logo{
+  img{
+    width: 80px
+  }
+  @include h.logo;
+}
+
+.fo-cate{
+  margin-right: 100px;
+  p{
+    @include h.font;
+    margin-bottom: 25px;
+  }
+  a{
+    text-decoration: underline;
+  }
+}
+
+.fo-pic{
+  margin-right: 70px;
+  @include h.fo-link;
+  p{
+    max-width: 110px;
+    white-space: wrap;
+  }
+}
+
+.fo-news{
+  @include h.fo-link;
+}
+
+.fo-rec{
+  @include h.fo-link;
+  transform: translate(130%,0);
+}
+
+.fo-tag{
+  p{
+    @include h.font;
+  }
+  li{
+    @include h.fo-tag;
+  }
+  ul{
+    display: flex;
+    gap: 2px;
+    max-width: fit-content;
+    padding: 0;
+  }
+}
+
+.fo-btn{
+  h4{
+    @include h.font;
+    margin-bottom: 16px;
+  }
+  p{
+    @include h.font;
+    @include h.fontbox;
+    padding: 12px 0px;
+    text-align: center;
+    width: 100%;
+    max-width: 275px;
+    margin-bottom: 5px;
+  }
+}
+
+.footer-map{
+  @include h.flex;
+  margin-bottom: 25px;
+  .fo-logo{
+    margin-right: 250px;
+  }
+}
+
+.footer-map2{
+  @include h.flex;
+}
+
+.footer-map3{
+  @include h.flex;
+}
+
+.fo-tag-btn{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 15%;
+  transform: translate(10%,10%);
+  margin-bottom: 100px;
+}
+
+.copy{
+  @include h.font;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+  <%- include('./components/_head.ejs',{data:data.head}) %>
+
+<body>
+  <%- include('./components/_header.ejs',{rec:data.recruit}) %>
+
+  <main>
+
+  <%- include('./components/_main.ejs',{heli:data.headline,cate:data.category,Tag:data.tag,pic:data.pickup}) %>
+
+  </main>
+  
+  <%- include('./components/_footer.ejs',{cate:data.category,pic:data.pickup,rec:data.recruit,Tag:data.tag}) %>
+  <script src="/src/js/_scroll.js"></script>
+</body>
+</html>

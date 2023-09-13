@@ -1,0 +1,21 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run ejs && npm run sass",
+    "startsub": "npm run subejs && npm run sass",
+    
+    "ejs": "ejs-cli -b src/ejs/ *.ejs -e components/ -o dest/ -O data.json",
+    "sass": "sass src/style.scss dest/css/style.css",
+    "subejs": "ejs-cli -b src/ejs/subpage/ *.ejs -e components/ -o dest/ -O data.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-cli": "^2.2.3",
+    "sass": "^1.66.1"
+  }
+}

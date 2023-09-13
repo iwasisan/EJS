@@ -1,0 +1,63 @@
+@use "./../base_css/base" as b;
+@use "./../item_css/henka" as h;
+
+
+.headernavi-top{
+  @include h.flex;
+  align-self: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+
+
+.headernavi-1{
+  @include h.flex;
+  align-self: center;
+  column-gap: calc(100% - 100px);
+
+  img{
+    max-width: 100px;
+  }
+  h3{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  p{
+    @include h.font;
+  }
+}
+
+.headernavi-2{
+  @include h.flex;
+  column-gap: 100px;
+
+  p{
+    @include h.font;
+    margin-left: 12px
+  }
+  li{
+    @include h.font;
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+}
+
+.header-link{
+  @include h.flex;
+  align-items: first baseline;
+}
+
+
+.header-button{
+  p{
+    @include h.fontbox;
+    max-width: 113px;
+    margin-top: 8px;
+  }
+}
+
+
+
+
+

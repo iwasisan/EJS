@@ -1,0 +1,637 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  right: 0;
+  background-color: #4512ff;
+  transition: all 0.5s;
+}
+
+.hamburger__line--1 {
+  top: 5px;
+}
+
+.hamburger__line--2 {
+  top: 18px;
+}
+
+.hamburger__line--3 {
+  top: 31px;
+}
+
+.open .hamburger__line--1 {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.open .hamburger__line--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line--3 {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.sp-nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.open .sp-nav {
+  right: 0;
+}
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #4512ff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+.hum-ul {
+  margin-top: 100px;
+}
+
+.hum-li {
+  list-style: none;
+  line-height: 3;
+}
+
+.headernavi-top {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.headernavi-1 {
+  display: flex;
+  align-self: center;
+  column-gap: calc(100% - 100px);
+}
+.headernavi-1 img {
+  max-width: 100px;
+}
+.headernavi-1 h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.headernavi-1 p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+}
+
+.headernavi-2 {
+  display: flex;
+  column-gap: 100px;
+}
+.headernavi-2 p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-left: 12px;
+}
+.headernavi-2 li {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.header-link {
+  display: flex;
+  align-items: first baseline;
+}
+
+.header-button p {
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  max-width: 113px;
+  margin-top: 8px;
+}
+
+.main-title {
+  display: flex;
+  column-gap: 10%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.main-title h2 {
+  margin: 0;
+}
+.main-title img {
+  max-width: 730px;
+}
+.main-title hgroup {
+  writing-mode: vertical-rl;
+}
+.main-title hgroup h1 {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  font-size: 35px;
+  line-height: 1.2;
+}
+.main-title hgroup p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  letter-spacing: 0.1rem;
+}
+
+.news {
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  align-items: flex-start;
+  column-gap: 80px;
+}
+.news h2 {
+  font-size: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+.news ul {
+  line-height: 1.8;
+  padding: 0;
+}
+.news a {
+  text-decoration: underline;
+  margin-left: 25px;
+  font-size: 10px;
+}
+.news h2::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 1px;
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+}
+
+.rec {
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  align-items: flex-start;
+  column-gap: 70px;
+  transform: translate(-20px, 0);
+}
+.rec h2 {
+  font-size: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+.rec div p {
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  width: 220px;
+  margin: 0;
+  margin-top: 3px;
+}
+.rec div a {
+  transform: translate(10px, 0);
+}
+.rec h2::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 1px;
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+}
+
+.news-rec {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+.cate {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+}
+.cate h3 {
+  font-size: 14px;
+  margin-top: 0;
+}
+.cate p {
+  margin: 0 0 24px 0;
+}
+.cate .circle {
+  display: inline-block; /* ←忘れない！ */
+  width: 10px;
+  height: 10px;
+  background-color: skyblue;
+  border-radius: 50%; /* ←円を作る */
+  margin-right: 10px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+}
+.tag h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.tag p {
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 3px 6px;
+  margin: 0;
+}
+.tag div {
+  width: 300px;
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.cont-search {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cont-search h3 {
+  font-size: 23px;
+  margin: 0;
+}
+.cont-search .btn {
+  font-size: 8px;
+  color: #ffffff;
+  width: 35px;
+  padding: 1px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  background: #000000;
+  cursor: pointer;
+}
+.cont-search .togul {
+  display: flex;
+  margin: 0;
+  max-width: fit-content;
+}
+.cont-search .togul p {
+  padding: 0 25px;
+  font-size: 8px;
+  margin: 0;
+  flex: 1;
+  border: solid 1px rgb(15, 15, 15);
+}
+.cont-search .togul .togul1 {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.cont-search-togul {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+}
+
+.block-a {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  max-width: fit-content;
+  max-height: 430px;
+}
+.block-a p {
+  margin: 0;
+}
+.block-a nav img {
+  max-width: 269px;
+  margin-bottom: 6px;
+}
+.block-a nav span {
+  display: inline-block; /* ←忘れない！ */
+  width: 10px;
+  height: 10px;
+  background-color: skyblue;
+  border-radius: 50%; /* ←円を作る */
+  margin-right: 10px;
+}
+.block-a nav .block-title {
+  font-size: 20px;
+  margin: 8px 0 12px 0;
+  max-width: 266px;
+  white-space: normal;
+}
+.block-a aside {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  max-width: 269px;
+}
+.block-a aside p {
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 3px 6px;
+}
+
+.cont-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.9fr 1fr;
+  gap: 30px;
+  max-width: fit-content;
+}
+
+.cafe-tag-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.contnext {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  border-radius: 20px;
+  width: 865px;
+  text-align: center;
+  margin-left: auto;
+  margin-bottom: 120px;
+  transform: translate(10%, 0);
+}
+
+hr {
+  margin: 0 auto 120px;
+}
+
+.fo-logo img {
+  width: 80px;
+}
+.fo-logo img {
+  max-width: 100px;
+}
+.fo-logo h3 {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fo-cate {
+  margin-right: 100px;
+}
+.fo-cate p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 25px;
+}
+.fo-cate a {
+  text-decoration: underline;
+}
+
+.fo-pic {
+  margin-right: 70px;
+}
+.fo-pic p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 25px;
+}
+.fo-pic a {
+  text-decoration: underline;
+}
+.fo-pic p {
+  max-width: 110px;
+  white-space: wrap;
+}
+
+.fo-news p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 25px;
+}
+.fo-news a {
+  text-decoration: underline;
+}
+
+.fo-rec {
+  transform: translate(130%, 0);
+}
+.fo-rec p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 25px;
+}
+.fo-rec a {
+  text-decoration: underline;
+}
+
+.fo-tag p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+}
+.fo-tag li {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  width: fit-content;
+  padding: 3px 6px;
+  margin: 0;
+}
+.fo-tag ul {
+  display: flex;
+  gap: 2px;
+  max-width: fit-content;
+  padding: 0;
+}
+
+.fo-btn h4 {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 16px;
+}
+.fo-btn p {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  border: solid 1px rgb(15, 15, 15);
+  padding: 7px 13px;
+  border-radius: 3px;
+  padding: 12px 0px;
+  text-align: center;
+  width: 100%;
+  max-width: 275px;
+  margin-bottom: 5px;
+}
+
+.footer-map {
+  display: flex;
+  margin-bottom: 25px;
+}
+.footer-map .fo-logo {
+  margin-right: 250px;
+}
+
+.footer-map2 {
+  display: flex;
+}
+
+.footer-map3 {
+  display: flex;
+}
+
+.fo-tag-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 15%;
+  transform: translate(10%, 10%);
+  margin-bottom: 100px;
+}
+
+.copy {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 0;
+  color: rgb(15, 15, 15);
+}
+
+.circle.cir0 {
+  background-color: rgb(90, 90, 90);
+}
+
+.circle.cir1 {
+  background-color: rgb(91, 179, 188);
+}
+
+.circle.cir2 {
+  background-color: rgb(208, 95, 82);
+}
+
+.circle.cir3 {
+  background-color: rgb(38, 116, 171);
+}
+
+.circle.cir4 {
+  background-color: rgb(248, 221, 109);
+}
+
+/*# sourceMappingURL=style.css.map */

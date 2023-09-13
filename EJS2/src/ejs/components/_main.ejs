@@ -1,0 +1,213 @@
+<div class="main-title">
+  <h2><img src="/src/img/写真.jpg" alt=""></h2>
+  <hgroup>
+    <h1>
+      MITSUI&CO.<br>
+      RECRUIT
+    </h1>
+    <p>三井物産採用ポータルサイト</p>
+  </hgroup>
+</div>
+
+<% const newstext1 = "キャリア採用：2023年度キャリア採用選考情報を公開しました" %>
+<% const newstext2 = "三井物産でのキャリア形成・活躍イメージを公開しました" %>
+<% const newstext3 = "新卒採用：第二クールに「Trading Internship of Mitsui」を新設しました" %>
+<% const newstext4 = "「その志で、世界を動かせ。」スペシャルサイトのご案内" %>
+<% const newstext5 = "新卒採用：第二クールにおける2つのインターン情報を公開しました" %>
+
+<% const newsdate1 = "2023.04.03" %>
+<% const newsdate2 = "2023.02.22" %>
+<% const newsdate3 = "2023.01.30" %>
+
+<section class="news-rec">
+  <nav class="news">
+    <h2><%= heli.news %></h2>
+    <ul>
+      <li><%= newsdate1 %><a href="#"><%= newstext1 %></a></li>
+      <li><%= newsdate2 %><a href="#"><%= newstext2 %></a></li>
+      <li><%= newsdate2 %><a href="#"><%= newstext3 %></a></li>
+      <li><%= newsdate2 %><a href="#"><%= newstext4 %></a></li>
+      <li><%= newsdate3 %><a href="#"><%= newstext5 %></a></li>
+    </ul>
+  </nav>
+  <nav class="rec">
+    <h2><%= heli.recruit %></h2>
+    <div>
+      <p><a href="#">キャリア採用向け</a></p>
+      <p><a href="#">新卒採用向け</a></p>
+      <p><a href="#">インターンシップ</a></p>
+    </div>
+  </nav>
+</section>
+
+<section class="cafe-tag-cont">
+  <aside class="cate-tag">
+    <nav class="cate">
+      <h3>Category</h3>
+      <div>
+        <p><span class="circle cir0"></span><a href="#"><%= cate.all %></a></p>
+        <p><span class="circle cir1"></span><a href="#"><%= cate.company %></a></p>
+        <p><span class="circle cir2"></span><a href="#"><%= cate.employee %></a></p>
+        <p><span class="circle cir3"></span><a href="#"><%= cate.work %></a></p>
+        <p><span class="circle cir4"></span><a href="#"><%= cate.environment %></a></p>
+      </div>
+    </nav>
+    <nav class="tag">
+      <h3>Tag</h3>
+      <div>
+        <p><a href="#"><%= Tag.career %></a></p>
+        <p><a href="#"><%= Tag.new %></a></p>
+        <p><a href="#"><%= Tag.carerec %></a></p>
+        <p><a href="#"><%= Tag.culture %></a></p>
+        <p><a href="#"><%= Tag.interview %></a></p>
+        <p><a href="#"><%= Tag.system %></a></p>
+      </div>
+    </nav>
+  </aside>
+  <article class="contents">
+    <nav class="cont-search">
+      <h3>Contents</h3>
+      <div class="cont-search-togul">
+        <form>
+          <input type="search" name="search" placeholder="search">
+          <input class="btn" type="submit" name="submit" value="検索">
+        </form>
+        <div class="togul">
+          <p class="togul1">GRID</p>
+          <p>LIST</p>
+        </div>
+      </div>
+    </nav>
+    <section class="cont-block">
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真１.png" alt=""></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.about %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真２.png" alt=""></p>
+            <p><span class="circle cir3"></span><%= cate.work %></p>
+            <p class="block-title"><%= pic.work %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.career %></a></p>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+            <p><a href="#"><%= Tag.system %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真３.png" alt=""></p>
+            <p><span class="circle cir3"></span><%= cate.work %></p>
+            <p class="block-title"><%= pic.career %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.career %></a></p>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+            <p><a href="#"><%= Tag.system %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真４.png" alt=""></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.raise %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.career %></a></p>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.system %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真5.png" alt=""></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.DNA %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真6.png" alt=""></p>
+            <p><span class="circle cir1"></span><%= cate.company %></p>
+            <p class="block-title"><%= pic.philosophy %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.carerec %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真7.png" alt=""></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.girl %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真８.png" alt=""></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.boy %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.new %></a></p>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+      <div class="block-a">
+        <nav>
+          <a href="#">
+            <p><img src="/src/img/写真９.png" alt=""></p>
+            <p><span class="circle cir4"></span><%= cate.environment %></p>
+            <p class="block-title"><%= pic.office %></p>
+          </a>
+        </nav>
+        <aside>
+            <p><a href="#"><%= Tag.culture %></a></p>
+        </aside>
+      </div>
+    </section>
+  </article>
+</section>
+<p class="contnext"><a href="#">もっと見る</a></p>
+<hr>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+  <%- include('./../components/_head.ejs',{data:data.head}) %>
+
+<body>
+  <%- include('./../components/_header.ejs',{rec:data.recruit}) %>
+
+  <main>
+
+    <%- include('./../components/components-about/_main2.ejs',{cate:data.category,Tag:data.tag,Tag2:data.tag2,kou:data.koumoku}) %>
+  
+  </main>
+  
+  <%- include('./../components/_footer.ejs',{cate:data.category,pic:data.pickup,rec:data.recruit,Tag:data.tag}) %>
+  <script src="/src/js/_scroll.js"></script>
+</body>
+</html>

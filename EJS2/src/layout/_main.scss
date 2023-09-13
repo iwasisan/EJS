@@ -1,0 +1,181 @@
+@use "./../base_css/base" as b;
+@use "./../item_css/henka" as h;
+@use "./../layout/header" as he;
+@use "./../item_css/tuika" as t;
+
+
+.main-title{
+  @include h.flex;
+  column-gap: 10%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  h2{
+      margin: 0;
+    }
+    img{
+      max-width: 730px;
+    }
+
+  hgroup{
+    writing-mode: vertical-rl;
+    h1{
+      @include h.font;
+      font-size: 35px;
+      line-height: 1.2;
+    }
+    p{
+      @include h.font;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.news{
+  @include h.news;
+  column-gap: 80px;
+  ul{
+    line-height: 1.8;
+    padding: 0;
+  }
+  a{
+    text-decoration: underline;
+    margin-left: 25px;
+    font-size: 10px;
+  }
+  h2{
+    &::after{
+      @include t.line;
+    }
+  }
+}
+
+.rec{
+  @include h.news;
+  column-gap: 70px;
+  transform: translate(-20px,0);
+  div{
+    p{
+      @include h.fontbox;
+      width: 220px;
+      margin: 0;
+      margin-top: 3px;
+    }
+    a{
+      transform: translate(10px,0);
+    }
+  }
+  h2{
+    &::after{
+      @include t.line;
+    }
+  }
+}
+
+.news-rec{
+  @include h.flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+.cate{
+  @include h.font;
+  h3{
+    font-size: 14px;
+    margin-top: 0;
+  }
+  p{
+    margin: 0 0 24px 0;
+  }
+  .circle{
+    @include t.circle;
+    margin-right: 10px;
+  }
+}
+
+
+.tag{
+  @include h.cafe;
+  p{
+      @include h.fontbox;
+      width: fit-content;
+      padding: 3px 6px;
+      margin: 0;
+    }
+  div{
+    width: 300px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+}
+
+.cont-search{
+  @include h.font;
+  @include h.flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  h3{
+    font-size: 23px;
+    margin: 0; 
+  }
+
+  .btn{
+      @include t.btn;
+    }
+
+  .togul{
+    @include h.flex;
+    margin: 0;
+    max-width: fit-content;
+
+    p{
+      padding: 0 25px;
+      font-size: 8px;
+      margin: 0;
+      flex: 1;
+      border: solid 1px b.$font-color;
+    }
+    .togul1{
+      color: rgb(255, 255, 255);
+      background-color: black;
+    }
+  }
+}
+
+.cont-search-togul{
+  @include h.flex;
+  align-items:center;
+  column-gap: 45px;
+}
+
+
+.block-a{
+  @include h.contblock;
+}
+
+.cont-block{
+  @include h.grid;
+}
+
+.cafe-tag-cont{
+  @include h.flex;
+  justify-content: center
+}
+
+.contnext{
+  @include h.font;
+  @include h.fontbox;
+  border-radius: 20px;
+  width: 865px;
+  text-align: center;
+  margin-left: auto;
+  margin-bottom: 120px;
+  transform: translate(10%,0);
+}
+
+hr{
+  margin: 0 auto 120px;
+}

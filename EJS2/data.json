@@ -1,0 +1,66 @@
+{
+  "data": {
+    "head": {
+      "title": "三井物産採用",
+      "description": "三井物産採用ポータルサイト"
+    },
+    "recruit": {
+      "career": "キャリア採用",
+      "new": "新卒採用",
+      "recruit": "採用情報",
+      "intern": "インターンシップ"
+    },
+    "headline": {
+      "news": "News",
+      "recruit": "採用情報",
+      "contents": "Contents"
+    },
+    "category": {
+      "all": "全て",
+      "company": "会社を知る",
+      "employee": "社員を知る",
+      "work": "仕事を知る",
+      "environment": "働く環境"
+    },
+    "tag": {
+      "career": "#career",
+      "new": "#新卒採用",
+      "carerec": "#キャリア採用",
+      "culture": "#カルチャー",
+      "interview": "#インタビュー",
+      "system": "#制度"
+    },
+    "header": {
+      "title": "テストします"
+    },
+    "pickup": {
+      "about": "三井物産について",
+      "DNA": "三井物産のDNA",
+      "raise": "人材育成制度",
+      "work": "三井物産でのキャリア形成・活躍イメージ",
+      "career": "三井物産の人物像とキャリア開発",
+      "philosophy": "理念の礎となった経営者たち",
+      "girl": "女子寮座談会",
+      "boy": "男子寮座談会",
+      "office": "挑戦と創造に向けたオフィス"
+    },
+    "tag2": {
+      "tieki": "地域スペシャリスト",
+      "btob": "BtoBマーケター",
+      "trader": "トレーダー",
+      "btoc": "BtoCマーケター",
+      "adomi": "物流アドミニストレーター",
+      "copo": "コーポレート機能プロフェッショナル",
+      "MA": "事業投資・M&Aプロフェッショナル",
+      "cre": "「0→1」ビジネスクリエイター",
+      "pro": "事業経営プロフェッショナル",
+      "valu": "事業管理・バリューアップマネージャー",
+      "port": "事業ポートフォリオマネージャー"
+    },
+    "koumoku": {
+      "role": "役割",
+      "skil": "スキル",
+      "interview": "インタビュー"
+    }
+  }
+}
