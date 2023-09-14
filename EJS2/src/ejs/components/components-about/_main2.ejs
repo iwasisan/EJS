@@ -1,35 +1,37 @@
-<article>
-  <aside class="cate-tag">
-    <nav class="cate">
-      <h3>Category</h3>
-      <div>
-        <p><span class="circle cir0"></span><a href="#"><%= cate.all %></a></p>
-        <p><span class="circle cir1"></span><a href="#"><%= cate.company %></a></p>
-        <p><span class="circle cir2"></span><a href="#"><%= cate.employee %></a></p>
-        <p><span class="circle cir3"></span><a href="#"><%= cate.work %></a></p>
-        <p><span class="circle cir4"></span><a href="#"><%= cate.environment %></a></p>
-      </div>
-    </nav>
-    <nav class="tag">
-      <h3>Tag</h3>
-      <div>
-        <p><a href="#"><%= Tag.career %></a></p>
-        <p><a href="#"><%= Tag.new %></a></p>
-        <p><a href="#"><%= Tag.carerec %></a></p>
-        <p><a href="#"><%= Tag.culture %></a></p>
-        <p><a href="#"><%= Tag.interview %></a></p>
-        <p><a href="#"><%= Tag.system %></a></p>
-      </div>
-    </nav>
+<article class="sub-master">
+  <aside class="cate-tag subcate">
+    <div class="subcate2">
+      <nav class="cate">
+        <h3>Category</h3>
+        <div>
+          <p><span class="circle cir0"></span><a href="#"><%= cate.all %></a></p>
+          <p><span class="circle cir1"></span><a href="#"><%= cate.company %></a></p>
+          <p><span class="circle cir2"></span><a href="#"><%= cate.employee %></a></p>
+          <p><span class="circle cir3"></span><a href="#"><%= cate.work %></a></p>
+          <p><span class="circle cir4"></span><a href="#"><%= cate.environment %></a></p>
+        </div>
+      </nav>
+      <nav class="tag">
+        <h3>Tag</h3>
+        <div>
+          <p><a href="#"><%= Tag.career %></a></p>
+          <p><a href="#"><%= Tag.new %></a></p>
+          <p><a href="#"><%= Tag.carerec %></a></p>
+          <p><a href="#"><%= Tag.culture %></a></p>
+          <p><a href="#"><%= Tag.interview %></a></p>
+          <p><a href="#"><%= Tag.system %></a></p>
+        </div>
+      </nav>
+    </div>
   </aside>
 
   <section>
-    <div>
-      <hgroup>
-        <h1>三井物産でのキャリア形成・活躍イメージ</h1>
+    <div class="sub-caree">
+      <hgroup class="sub-title1">
         <p><%= cate.work %></p>
+        <h1>三井物産でのキャリア形成・活躍イメージ</h1>
       </hgroup>
-      <div>
+      <div class="sub-tag">
         <p><a href="#"><%= Tag.career %></a></p>
         <p><a href="#"><%= Tag.new %></a></p>
         <p><a href="#"><%= Tag.carerec %></a></p>
@@ -38,23 +40,23 @@
       </div>
       <p><img src="/src/img/MAin.jpg"></p>
     </div>
-    <section>
+    <section class="sub-layout">
       <nav>
-        <div>
+        <div class="sub-title2">
           <h2>
             多様で自立したプロフェッショナルの在り方
           </h2>
           <p>
             当社には、個々人のWill（意志）、経験、持てるスキルに応じて多様なキャリアの選択肢がありま<br>
             す。<br>
-            このキャリアパスをより自分らしく描けるように、当社では2022年に、各本部で活躍している社員<br>
-            200名以上の業務内容やスキルをヒアリングし、いくつかのモデルに可視化いたしました。<br>
+            このキャリアパスをより自分らしく描けるように、当社では2022年に、各本部で活躍している社<br>
+            員200名以上の業務内容やスキルをヒアリングし、いくつかのモデルに可視化いたしました。<br>
             これから三井物産という舞台に加わろうとしてくださる皆さんにも当社でのキャリアパスをより具<br>
             体的にイメージして頂きたいという思いから、このモデルをもとにした「三井物産で活躍する人材<br>
             モデル例」を紹介いたします。
           </p>
         </div>
-        <aside>
+        <aside class="sub-tag2">
           <h2>
             三井物産でのキャリア形成・活躍イメージ
           </h2>
@@ -73,12 +75,12 @@
           </div>
         </aside>
 
-        <div>
+        <div class="tieki">
           <h2><%= Tag2.tieki %></h2>
-          <div>
+          <div class="tieki-ime-text subflex">
             <p><img src="/src/img/01-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="tieki-text1 subtext">
                 <h5><%= kou.role %></h5>
                 <p>
                   語学・カルチャーへの深い理解をベースに、当該地域の政治経<br>
@@ -87,7 +89,7 @@
                   等様々な役割を担う。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="tieki-text2 subtext">
                 <h5><%= kou.skil %></h5>
                 <p>
                   言語＆異文化対応力/地域特有の地政学的/文化/歴史/商習慣<br>
@@ -98,12 +100,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="btob">
           <h2><%= Tag2.btob %></h2>
-          <div>
+          <div class="btob-ime-text subflex">
             <p><img src="/src/img/02-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="btob-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   サプライヤー・顧客・商品起点で需給調整機能を提供する。サ<br>
@@ -112,13 +114,13 @@
                   消のための事業買収も戦略実行の一手として検討する。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="btob-text2">
                 <h5><%= kou.skil %></h5>
                 <p>【外部環境分析】市場分析</p>
                 <p>【ステークホルダーマネジメント】関係構築</p>
                 <p>【リスクマネジメント】信用リスク管理・安全貿易管理</p>
               </hgroup>
-              <hgroup>
+              <hgroup class="btob-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   スマートフォンからアフリカまで、「偶然のキャリア」を歩む<br>
@@ -130,12 +132,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="trader">
           <h2><%= Tag2.trader %></h2>
-          <div>
+          <div class="trader-ime-text subflex">
             <p><img src="/src/img/03-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="trader-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   BtoBマーケターとしての機能に加えて、自ら商品市場リスクを<br>
@@ -143,7 +145,7 @@
                   バティブを駆使しして収益の最大化を狙う。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="trader-text2">
                 <h5><%= kou.skil %></h5>
                 <p>【外部環境分析】市場分析能力・需給調査</p>
                 <p>【ステークホルダーマネジメント】関係構築</p>
@@ -152,7 +154,7 @@
                   市場リスク管理（Long/Shortポジション・先物関連）
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="trader-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   エネルギー分野の最前線へ 世界を舞台に「強い組織づくり」<br>
@@ -167,12 +169,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="btoc">
           <h2><%= Tag2.btoc %></h2>
-          <div>
+          <div class="btoc-ime-text subflex">
             <p><img src="/src/img/04-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="btoc-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   消費者ニーズを深く考察すると共に、データ分析を駆使して小<br>
@@ -180,9 +182,9 @@
                   ネルの比較検討を事業利益最大化の観点から遂行する。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="btoc-text2">
                 <h5><%= kou.skil %></h5>
-                <p>消費者起点のビジネスモデル構築力</p><br>
+                <p>消費者起点のビジネスモデル構築力</p>
                 <p>販売チャネル戦略立案・実行</p>
                 <p>【IT】データマネジメント・データアナリシス</p>
               </hgroup>
@@ -190,12 +192,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="adomi">
           <h2><%= Tag2.adomi %></h2>
-          <div>
+          <div class="adomi-ime-text subflex">
             <p><img src="/src/img/05-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="adomi-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   物流ビジネス実務を、為替・先物等を含めた各種オペレーショ<br>
@@ -204,7 +206,7 @@
                   収益向上に貢献する。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="adomi-text2">
                 <h5><%= kou.skil %></h5>
                 <p>
                   【物流構築・最適化】サプライチェーン構築力、プロセスエン<br>
@@ -216,7 +218,7 @@
                   ションマネジメント）
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="adomi-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   エネルギー分野の最前線へ 世界を舞台に「強い組織づくり」<br>
@@ -231,11 +233,11 @@
           </div>
         </div>
 
-        <div>
+        <div class="copo">
           <h2><%= Tag2.copo %></h2>
-          <div>
+          <div class="copo-ime-text subflex">
             <p><img src="/src/img/06-1.jpg"></p>
-            <div>
+            <div class="subflex2">
               <ul>
                 <li>DXビジネス人材</li>
                 <li>IT/DX技術・知識人材</li>
@@ -247,7 +249,7 @@
                   IR)
                 </li>
               </ul>
-              <hgroup>
+              <hgroup class="copo-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   各コーポレート部門で、専門知識を駆使しながら、機能発揮を<br>
@@ -257,7 +259,7 @@
                   収益向上に貢献する。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="copo-text2">
                 <h5><%= kou.skil %></h5>
                 <p>
                   各コーポレート組織に於いて必要とされる専門スキル<br>
@@ -265,7 +267,7 @@
                   スクマネジメントするコミュニケーション
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="copo-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   「変革の時代」に求められる人事の姿必要な専門性は年々高<br>
@@ -280,12 +282,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="MA">
           <h2><%= Tag2.MA %></h2>
-          <div>
+          <div class="MA-ime-text subflex">
             <p><img src="/src/img/07-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="MA-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   業界での技術革新や再編動向への深い理解を元に投資案件を創<br>
@@ -293,7 +295,7 @@
                   に、PMIにも強みを持つ。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="MA-text2">
                 <h5><%= kou.skil %></h5>
                 <p>【外部環境分析】市場分析・マクロ環境分析・企業分析</p>
                 <p>【新規投資】投資ファイナンス組成・実行</p>
@@ -303,12 +305,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="cre">
           <h2><%= Tag2.cre %></h2>
-          <div>
+          <div class="cre-ime-text subflex">
             <p><img src="/src/img/08-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="cre-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   0から1を創出する新規ビジネスクリエイター。新領域案件形成<br>
@@ -316,7 +318,7 @@
                   り、MAが伴うこともある。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="cre-text2">
                 <h5><%= kou.skil %></h5>
                 <p>
                   当該ビジネス領域の専門性/ネットワークを急激にキャッチア<br>
@@ -328,12 +330,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="pro">
           <h2><%= Tag2.pro %></h2>
-          <div>
+          <div class="pro-ime-text subflex">
             <p><img src="/src/img/09-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="pro-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   事業目標達成に向け組織を率いる経営人材。事業の成長戦略を<br>
@@ -343,7 +345,7 @@
                   つ有り得ることを示すべく敢えて挿入している認識。）
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="pro-text2">
                 <h5><%= kou.skil %></h5>
                 <p>【関係会社管理・運営】成長基盤構築/チェンジマネジメント</p>
                 <p>【新規投資・撤退】事業再生・撤退業務</p>
@@ -353,7 +355,7 @@
                 </p>
                 <p>【業界固有スキル】生産・操業管理</p>
               </hgroup>
-              <hgroup>
+              <hgroup class="pro-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   メーカーから転職へ 自動運転技術で社会インフラを構築した<br>
@@ -364,12 +366,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="valu">
           <h2><%= Tag2.valu %></h2>
-          <div>
+          <div class="valu-ime-text subflex">
             <p><img src="/src/img/10-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="valu-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   自身の担当するアセット・グループ企業の成長・収益向上に向<br>
@@ -378,7 +380,7 @@
                   応・税務対応にも従事する。
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="valu-text2">
                 <h5><%= kou.skil %></h5>
                 <p>【関係会社管理・運営】JV（含 SPC）運営実務</p>
                 <p>
@@ -391,7 +393,7 @@
                   ションマネジメント)
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="valu-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   スマートフォンからアフリカまで、「偶然のキャリア」を歩<br>
@@ -403,12 +405,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="port">
           <h2><%= Tag2.port %></h2>
-          <div>
+          <div class="port-ime-text subflex">
             <p><img src="/src/img/11-1.jpg"></p>
-            <div>
-              <hgroup>
+            <div class="subflex2">
+              <hgroup class="port-text1">
                 <h5><%= kou.role %></h5>
                 <p>
                   業界トレンドへの深い知見を基に、総合商社ならではの事業<br>
@@ -416,7 +418,7 @@
                   には複数社の取締役として関与）
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="port-text2">
                 <h5><%= kou.skil %></h5>
                 <p>
                   【ポートフォリオ・マネジメント】事業ポートフォリオマネジ<br>
@@ -427,7 +429,7 @@
                   ダーシップ
                 </p>
               </hgroup>
-              <hgroup>
+              <hgroup class="port-text3">
                 <h5><%= kou.interview %></h5>
                 <p>
                   エネルギー分野の最前線へ 世界を舞台に「強い組織づくり」<br>
@@ -437,21 +439,23 @@
             </div>
           </div>
         </div>
-
       </nav>
-      <nav>
-        <h4>目次</h4>
-        <p>
-          多様で自立したプロフェッ<br>
-          ショナルの在り方
-        </p>
-        <p>
-          三井物産でのキャリア形<br>
-          成・活躍イメージ
-        </p>
+
+      <nav class="mokuji">
+        <div class="mokuji2">
+          <h4>目次</h4>
+          <p>
+            多様で自立したプロフェッ<br>
+            ショナルの在り方
+          </p>
+          <p>
+            三井物産でのキャリア形<br>
+            成・活躍イメージ
+          </p>
+        </div>
       </nav>
     </section>
   </section>
 </article>
-
+<hr>
 

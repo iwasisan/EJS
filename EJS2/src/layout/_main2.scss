@@ -1,0 +1,419 @@
+@use "./../base_css/base" as b;
+@use "./../item_css/henka" as h;
+@use "./../item_css/tuika" as t;
+
+.sub-title1{
+  @include h.flex;
+  align-items: center;
+  column-gap: 15%;
+  @include h.font;
+  position: relative;
+  margin-bottom: 3%;
+  p{
+    margin: 0;
+  }
+  h1{
+    margin: 0;
+    font-size: 25px;
+  }
+  &::after{
+    @include t.line;
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.sub-tag{
+  @include h.flex;
+  column-gap: 2px;
+  margin-bottom: 60px;
+  p{
+    @include h.font;
+    @include h.tag;
+  }
+}
+
+.sub-caree{
+  img{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
+
+.sub-title2{
+  @include h.subti;
+  p{
+    @include h.font;
+    line-height: 1.7;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 150px;
+  }
+}
+
+.sub-tag2{
+  @include h.subti;
+  margin-bottom: 70px;
+  div{
+    max-width: 710px;
+    @include h.flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    p{
+      @include h.tag;
+      margin: 0;
+    }
+  }
+}
+
+.tieki{
+  @include h.worktitle;
+}
+
+.tieki-ime-text{
+  @include h.workime;
+}
+
+.tieki-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.tieki-text2{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.btob{
+  @include h.worktitle;
+}
+
+.btob-ime-text{
+  @include h.workime;
+}
+
+.btob-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.btob-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.btob-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.trader{
+  @include h.worktitle;
+}
+
+.trader-ime-text{
+  @include h.workime;
+}
+
+.trader-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.trader-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.trader-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.btoc{
+  @include h.worktitle;
+}
+
+.btoc-ime-text{
+  @include h.workime;
+}
+
+.btoc-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.btoc-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+
+.adomi{
+  @include h.worktitle;
+}
+
+.adomi-ime-text{
+  @include h.workime;
+}
+
+.adomi-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.adomi-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.adomi-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.copo{
+  @include h.worktitle;
+}
+
+.copo-ime-text{
+  @include h.workime;
+  ul{
+    padding: 0;
+    li{
+      @include h.font;
+      line-height: 1.7;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.copo-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.copo-text2{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.copo-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.MA{
+  @include h.worktitle;
+}
+
+.MA-ime-text{
+  @include h.workime;
+}
+
+.MA-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.MA-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+
+.cre{
+  @include h.worktitle;
+}
+
+.cre-ime-text{
+  @include h.workime;
+}
+
+.cre-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.cre-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+
+.pro{
+  @include h.worktitle;
+}
+
+.pro-ime-text{
+  @include h.workime;
+}
+
+.pro-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.pro-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.pro-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.valu{
+  @include h.worktitle;
+}
+
+.valu-ime-text{
+  @include h.workime;
+}
+
+.valu-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.valu-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.valu-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+
+.port{
+  @include h.worktitle;
+}
+
+.port-ime-text{
+  @include h.workime;
+}
+
+.port-text1{
+  @include h.worktag;
+  @include h.worktext;
+}
+
+.port-text2{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text;
+  @include h.work-line;
+}
+
+.port-text3{
+  position: relative;
+  @include h.worktag;
+  @include h.work-text2;
+  @include h.work-line;
+}
+
+.mokuji{
+  display: flex;
+  flex-flow: column;
+  max-width: 212px;
+  h4{
+    @include h.font;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    &::after{
+      @include t.line;
+      width: 100%
+    }
+  }
+  p{
+    @include h.font;
+    font-size: 14px;
+    max-width: 165px;
+    margin: 0 auto 15px;
+  }
+}
+
+.mokuji2{
+  position: sticky;
+  top: 120px;
+}
+
+.subflex{
+  margin:15px 0 45px 0;
+  @include h.flex;
+  column-gap: 25px;
+}
+
+.subflex2{
+  @include h.flex;
+  flex-flow: column;
+  row-gap: 20px;
+  margin-bottom: 70px;
+}
+
+
+.sub-layout{
+  @include h.flex;
+  column-gap: 5%;
+  margin-bottom: 100px;
+}
+
+.sub-master{
+  margin-top: 200px;
+  @include h.flex;
+  column-gap: 5%;
+  justify-content: center;
+}
+
+.subcate{
+  display: flex;
+  flex-flow: column;
+}
+
+
+.subcate2{
+  position: sticky;
+  top: 50px;
+  p{
+    font-size: 14px;
+  }
+}

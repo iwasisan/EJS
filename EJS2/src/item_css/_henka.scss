@@ -111,10 +111,99 @@
 
 @mixin fo-link{
   p{
-    @include font;
+    @include font();
     margin-bottom: 25px;
   }
   a{
     text-decoration: underline;
+  }
+}
+
+// sub
+
+@mixin subti{
+  @include font();
+  max-width: 790px;
+  h2{
+    margin: 0 0 30px 0;
+    font-size: 37px;
+  }
+}
+
+@mixin worktitle{
+  h2{
+    @include font();
+    font-size: 25px;
+    position: relative;
+
+    &::after{
+      @include t.line;
+      width: 100%;
+      max-width: 820px;
+    }
+  }
+}
+
+@mixin workime{
+  img{
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@mixin worktag{
+  h5{
+    @include tag();
+    border-radius: 20px;
+    padding: 3px 10px;
+  }
+}
+
+@mixin worktext{
+  p{
+    @include font();
+    line-height: 1.7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+
+    &::after{
+      @include t.line;
+      width:100%;
+      max-width: 470px;
+      bottom: -20px;
+    }
+  }
+}
+
+@mixin work-text{
+  p{
+    @include font();
+    line-height: 1.7;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+@mixin work-line{
+  &::after{
+      @include t.line;
+      width:100%;
+      max-width: 470px;
+      bottom: -20px;
+    }
+}
+
+@mixin work-text2{
+  p{
+    @include font();
+    line-height: 1.7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    &::before{
+      content: "・";
+      display: inline-block;
+    }
   }
 }
